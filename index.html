@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Monthly Sales Analysis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Performance Dashboard</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="temp.html">May 2022</a>
+                            </li>
+                            <li>
+                                <a href="humid.html">April 2022</a>
+                            </li>
+                            <li>
+                                <a href="cloud.html">March 2022</a>
+                            </li>
+                            <li>
+                                <a href="wind.html">November 2021</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comparison.html">Records</a>
+                    </li>
+                    <!-- 
+                    <li>
+                        <a href="data.html">Data</a>
+                    </li>
+                    -->
+                </ul>
+            </div>
+
+        </div>
+        
+    </nav>
+
+
+    <div class="container">
+        <div class="row row-grid">
+            <div class="col-md-8">
+                <div class="box box-left">
+                    <section id="intro">
+                        <h1>Summary</h1>
+                        <hr>
+                        <figure>
+                            <a target="_blank" href="sales_bubble_comments.png">
+                                <img id="viz-main" src="sales_bubble_comments.png" alt="Increased Sales (bigger darker bubbles) after AI">
+                            </a>
+                        </figure>
+
+                        <section id="summary">
+                            <p> The above plot helps to quickly visualize the impact of implementing predictive analytics to perform better 
+                                customer segmentation and target marketing, using your current text marketing.<br>
+                                <br>
+                                Each circle represents the revenues in a given month for each year.  The larger and darker the circle, 
+                                the higher the sales. <br>
+                                <br>
+                                For comparison, take a look at the size and color of the circles after the COVID pandemic shutdown
+                                in March 2020.<br>
+                                <br>
+                                Now look at the size and color of the circles after September 2021, when we started using computer modeling 
+                                for predicting sales, and beating those predictions using more accurate customer segmentation and target marketing<br>.
+                                <br>
+                                As a result, you have had 4 record months with highest sales compared to the same time period prior to 
+                                the pandemic.  Those are Nov 2021, Mar 2022, Apr 2022, May 2022 and are illustrated by clicking on either 
+                                the ‘Plots’ or ‘Records’ links above, for more details underneath each plot.<br>
+                                <br>
+                                Also, Oct 2021, and Dec 2021 were the second best months in terms of sales when compared to the same 
+                                time periods before the pandemic.  The illustrations and details for those will be added to this website, soon.<br>
+                                <br>
+                                In summary, as a result of integrating your loyalty rewards system and your POS system, and implementing 
+                                computer based prediction analysis, your sales have improved by 32%, profit margins by 6%, and the 
+                                contribution of loyalty rewards customers (VIP) to your top line sales  has increased from 20% to 28%.
+                                
+                            </p>
+
+                        </section>
+
+                    </section>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="box box-right">
+                    <h2>Record Months</h2>
+                    <hr>
+
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="temp.html">
+                                    <img id="landing-viz" src="May_16_22.png" alt="Latitude vs. Temperature">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="humid.html">
+                                    <img id="landing-viz" src="Apr_16_22.png" alt="Latitude vs. Humidity">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="cloud.html">
+                                    <img id="landing-viz" src="Mar_16_22.png" alt="Latitude vs. Cloudiness">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="wind.html">
+                                    <img id="landing-viz" src="NOV_16_21.png" alt="Latitude vs. Wind Speed">
+                                </a>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
